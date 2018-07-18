@@ -1,3 +1,4 @@
+
 {
    $('button#play-pause').on('click', function() {
      player.playPause();
@@ -20,6 +21,7 @@ const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
 const previousSongIndex = currentSongIndex - 1;
  if (previousSongIndex >= album.songs.length) { return; }
 
+//previous button 
   const previousSong = album.songs[previousSongIndex];
   player.playPause(previousSong);
 });
